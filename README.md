@@ -1,7 +1,7 @@
 # pizzastore
 Pizza Ordering API with Django Rest Framework
 
-# Setting Up Project.
+# Setting Up the Project.
 `git clone https://github.com/kns003/pizzastore.git`
 
 ## Activate virtualenv with python3
@@ -33,10 +33,53 @@ Pizza Ordering API with Django Rest Framework
 add the required credentials
 
 ## Runserver and view the DRF Browsable API on browser
-`python manage.py runserver`
+`python manage.py runserver`</br>
 `http://127.0.0.1:8000/api/v1/`
 
 # API Details.
-Create Pizzaz either from django-admin or from api.
+Create Pizza either from django-admin or from the below command line.
+`python manage.py create_pizzas`
 
-## To create pizza from api
+## Creating order:
+`POST http://127.0.0.1:8000/api/v1/orders/`
+
+```
+{
+	"ordered_by": {
+		"customer_name": "Shashank",
+		"customer_address": "HSR Layout Bangalore",
+		"customer_phone": "9535441964"
+	},
+	"pizza_list": [{
+		"id": 1
+	}, {
+		"id": 2
+	}]
+}
+```
+
+## Get list of orders
+`GET http://127.0.0.1:8000/api/v1/orders/`
+
+```
+{
+	"count": 1,
+	"next": null,
+	"previous": null,
+	"results": [{
+		"ordered_by": {
+			"id": 1,
+			"customer_name": "shashank",
+			"customer_address": "hsr bangalore",
+			"customer_phone": "9535441964"
+		},
+		"status": "confirmed",
+		"pizza_list": [{
+			"id": 1
+		}, {
+			"id": 2
+		}]
+	}]
+}
+```
+
