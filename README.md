@@ -165,6 +165,7 @@ Following Validations are added:
 
 We perform a soft delete here and set the status of the order to `cancelled`
 
+## Choices in models.
 ```
 PIZZA_TYPE = (
     ('veg', 'VEG'),
