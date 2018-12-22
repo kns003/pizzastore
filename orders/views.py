@@ -36,6 +36,7 @@ class OrderViewSet(viewsets.ModelViewSet):
         :return:
         '''
         instance.status = dict(map(reversed, ORDER_STATUS))['Cancelled']
+        instance.is_active = False
         instance.save()
 
 class CustomerViewSet(viewsets.ModelViewSet):
