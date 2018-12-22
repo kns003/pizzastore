@@ -165,6 +165,25 @@ Following Validations are added:
 
 We perform a soft delete here and set the status of the order to `cancelled`
 
+```
+PIZZA_TYPE = (
+    ('veg', 'VEG'),
+    ('non_veg', 'NON VEG')
+)
+PIZZA_SIZE = (
+    ('regular', 'Regular'),
+    ('medium', 'Medium'),
+    ('large', 'Large')
+)
+ORDER_STATUS = (
+    ('confirmed', 'Confirmed'),
+    ('preparing', 'Preparing'),
+    ('out_for_delivery', 'Out for Delivery'),
+    ('delivered', 'Delivered'),
+    ('cancelled', 'Cancelled')
+)
+```
+
 ## Filter provided:
 ### for orders:
 filter by customer name : 
