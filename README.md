@@ -194,6 +194,32 @@ filter by pizza size :
 filter by status : 
 `http://127.0.0.1:8000/api/v1/orders/?status=confirmed`</br>
 
+## Customer and Pizza API.
+APIs have been created for Customer and Pizza also and they are restful as well. ALL the CRUD operations can be performed on them.
+
+Customer resource url : `http://127.0.0.1:8000/api/v1/customers/` </br>
+
+Customer Json:
+
+```
+{
+	"customer_name": "shashank",
+	"customer_address": "hsr bangalore",
+	"customer_phone": "9535441964"
+}
+```
+
+Pizza resource url : `http://127.0.0.1:8000/api/v1/pizzas/`
+
+```
+{
+	"name": "Peproni",
+	"type": "veg",
+	"size": "regular"
+}
+```
+
+
 # To run tests
 
 `python manage.py test orders.tests.test_views`
