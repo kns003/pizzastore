@@ -168,11 +168,11 @@ We perform a soft delete here and set the status of the order to `cancelled`
 ## Filter provided:
 ### for orders:
 filter by customer name
-`http://127.0.0.1:8000/api/v1/orders/?customer_name=shashank`
+`http://127.0.0.1:8000/api/v1/orders/?customer_name=shashank`<\br>
 filter by pizza size
-`http://127.0.0.1:8000/api/v1/orders/?size=regular`
+`http://127.0.0.1:8000/api/v1/orders/?size=regular`</br>
 filter by status
-`http://127.0.0.1:8000/api/v1/orders/?status=confirmed`
+`http://127.0.0.1:8000/api/v1/orders/?status=confirmed`</br>
 
 # To run tests
 
