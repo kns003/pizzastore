@@ -1,6 +1,6 @@
 from rest_framework import viewsets
 from .models import Order,Customer, Pizza, ORDER_STATUS
-from .serializers import CustomerUpdateSerializer, PizzaListSerializer, OrderCreateSerializer, \
+from .serializers import CustomerCreateSerializer, PizzaListSerializer, OrderCreateSerializer, \
     OrderUpdateSerializer, OrderListSerializer
 
 class OrderViewSet(viewsets.ModelViewSet):
@@ -41,7 +41,7 @@ class OrderViewSet(viewsets.ModelViewSet):
 
 class CustomerViewSet(viewsets.ModelViewSet):
     queryset = Customer.objects.all()
-    serializer_class = CustomerUpdateSerializer
+    serializer_class = CustomerCreateSerializer
 
 class PizzaViewSet(viewsets.ModelViewSet):
     queryset = Pizza.objects.all()
