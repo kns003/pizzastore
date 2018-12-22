@@ -176,7 +176,7 @@ filter by status
 
 # To run tests
 
-`python manage.py test orders.tests.test_views
+`python manage.py test orders.tests.test_views`
 
 
 
