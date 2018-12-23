@@ -13,6 +13,7 @@ Pizza Ordering API with Django Rest Framework
 `pip install -r requirements.txt`
 
 ## Setup Postgresql database. Follow the steps
+`sudo apt-get install postgresql postgresql-contrib`</br>
 `sudo -u postgres psql`</br>
 `CREATE DATABASE pizza;`</br>
 `CREATE USER moberries WITH PASSWORD 'moberries@098';`</br>
